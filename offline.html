@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sei Offline</title>
+    <meta name="theme-color" content="#efb22d">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Per ascoltare spoilers è necessaria una connessione ad internet">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/other/microphone.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/other/microphone.png">
+    <link rel="icon" type="image/png" sizes="750x750" href="assets/img/other/icon.png">
+    <link rel="icon" type="image/png" sizes="750x750" href="assets/img/other/icon.png">
+    <link rel="icon" type="image/png" sizes="750x750" href="assets/img/other/icon.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="assets\json\manifest.json">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/team.css">
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+    const el = document.createElement('pwa-update');
+    document.body.appendChild(el);
+</script>
+    <link rel="apple-touch-icon" href="/assets/img/other/icon.png">
+</head>
+
+<body>
+    <div class="container-fluid" style="width: 100vw;height: 100vh;">
+        <div class="row justify-content-center align-items-center" style="height: 100vh;padding-bottom: 80px;">
+            <div class="col text-center align-self-center" style="margin: 30px;">
+                <h1 class="text-center">Nessuna connessione!</h1>
+                <p class="text-center" style="font-size: 23px;">Per continuare ad ascoltare il tuo podcast preferito,
+                    conettiti ad una rete internet e riprova.</p>
+                <script>
+                    window.addEventListener('online', () => {
+                        window.location.reload();
+                    });
+                </script><button class="btn btn-secondary btn-lg" type="button" onclick="location.reload();"><i
+                        class="fa fa-refresh" style="margin-right: 5px;"></i>Ricarica la pagina</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/other.js"></script>
+    <script src="assets/js/player.js"></script>
+</body>
+
+</html>

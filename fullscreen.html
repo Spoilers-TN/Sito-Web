@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Ascolta "Spoilers"</title>
+    <meta name="theme-color" content="#efb22d">
+    <meta property="og:type" content="website">
+    <meta name="description"
+        content="Ascolta il podcast Spoilers direttamente da questo sito web, senza bisogno di utilizzare servizi esterni.">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/other/microphone.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/other/microphone.png">
+    <link rel="icon" type="image/png" sizes="750x750" href="assets/img/other/icon.png">
+    <link rel="icon" type="image/png" sizes="750x750" href="assets/img/other/icon.png">
+    <link rel="icon" type="image/png" sizes="750x750" href="assets/img/other/icon.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="assets\json\manifest.json">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/team.css">
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+    const el = document.createElement('pwa-update');
+    document.body.appendChild(el);
+</script>
+    <link rel="apple-touch-icon" href="/assets/img/other/icon.png">
+</head>
+
+<body style="text-align: center;" onload="playFullScreen()">
+    <div class="container-fluid" style="width: 100%;height: 100%;margin: 0px;padding: 0px;">
+        <div class="col align-self-center" style="width: 100%;height: 100%;">
+            <div class="card shadow-player" style="margin-top: 20px;">
+                <div class="card-body">
+                    <div class="col" style="padding: 0px;"><img
+                            class="img-fluid border rounded border-primary shadow myimage" id="image"
+                            src="assets/img/other/icon.png" loading="auto" style="max-width: 35%;"
+                            onload="playFullScreen()"></div>
+                    <div class="col-auto align-self-center" style="padding: 0px;margin: 0px;">
+                        <h4 class="track-name" style="padding: 0px;margin: 0px;margin-top: 20px;font-size: 29px;">
+                            OpenVoice</h4>
+                        <p id="podcastnav" class="podcastnav">Caricamento in corso</p>
+                        <p id="podcastnav" class="podcastnav">Premi indietro per tornare alla home page.</p><button
+                            class="btn btn-primary prev-track" type="button"
+                            style="margin-right: 10px;margin-bottom: 20px;" onclick="prevTrack()"><i
+                                class="fa fa-backward prev-track"></i></button><button
+                            class="btn btn-primary playpause-track" type="button"
+                            style="margin-right: 10px;margin-bottom: 20px;" onclick="playpauseTrack()"><i
+                                class="fa fa-pause"></i></button><button class="btn btn-primary next-track"
+                            type="button" style="margin-bottom: 20px;margin-right: 10px;" onclick="nextTrack()"><i
+                                class="fa fa-forward"></i></button>
+                    </div>
+                    <div class="col align-self-center" style="padding: 0px;">
+                        <div class="slider_container">
+                            <div class="current-time time-indicator">00:00</div>
+                            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                            <div class="total-duration time-indicator">03:14</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/other.js"></script>
+    <script src="assets/js/player.js"></script>
+</body>
+
+</html>
