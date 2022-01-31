@@ -1,0 +1,42 @@
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.player-fixed {
+  position: sticky;
+  bottom: 0;
+}
+
+.card.shadow-player {
+  box-shadow: 0px 0px 31px 34px rgba(41,41,41,0.77);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.slider_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seek_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  width: 80%;
+}
+
+.time-indicator {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
