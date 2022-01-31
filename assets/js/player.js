@@ -51,7 +51,7 @@ let track_list = [{
         name: "Innovazione industriale",
         desc: "",
         active: true,
-        path: "assets\podcasts\first.mp3"
+        path: "assets/podcasts/first.mp3"
     },
 ];
 
